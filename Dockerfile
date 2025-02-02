@@ -1,24 +1,3 @@
-#FROM ubuntu:24.04
- 
-## Update OS and install common dev tools
-
-#RUN apt-get update && apt-get upgrade -y
-#RUN apt-get install -y python3
-#RUN apt-get install -y python3-pip
-#RUN apt-get install -y wget vim git curl
-#RUN apt-get install -y python3-venv
-
-#RUN apt-get install -y systemd
-#RUN chmod +x /usr/bin/systemctl
-
-## Copy entrypoint
-#COPY entrypoint.sh /
-#RUN chmod +x /entrypoint.sh
-##RUN /usr/local/bin/docker-entrypoint
-## Run entrypoint
-##ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-#CMD ["/entrypoint.sh"]
-
 # Use Ubuntu 24.04 as the base image
 FROM ubuntu:24.04
 
